@@ -3,19 +3,19 @@ spring:
     name: itoken-eureka
 
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://172.18.29.222:9411
 
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://172.18.29.222:8084
 
 server:
   port: 8501
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 172.18.29.222
   client:
     # 表示是否将自己注册到Eureka ,因为要构建集群环境，需要将自己注册到集权，所以应该开启
     registerWithEureka: true
